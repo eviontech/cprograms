@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int stringCmp (char *s1,char *s2);
+
+int main()
+{
+    char str1[100],str2[100];
+ 
+	scanf("%[^\n]s",&str1);//read string with spaces
+    getchar();
+    scanf("%[^\n]s",&str2);//read string with spaces
+    
+    int check=1;
+    for(int i=0; str1[i]!='\0'; i++)
+    {
+        if(str1[i]!=str2[i])
+        {
+            check = 0;
+            break;
+        } 
+    }
+    
+ 
+    if(check==1)
+        printf("\n stringCmp  :String are same.");
+    else
+        printf("\n stringCmp  :String are not same.");
+ 
+ 
+    printf("\n");
+    return 0;
+}
