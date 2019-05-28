@@ -22,9 +22,9 @@ int main()
     
  
     if(check==1)
-        printf("\n stringCmp  :String are same.");
+        printf("\n String are same.");
     else
-        printf("\n stringCmp  :String are not same.");
+        printf("\n String are not same.");
  
  
     printf("\n");
